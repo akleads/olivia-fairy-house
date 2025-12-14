@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivia's Fairy House - Enchanted Dresses for Kids</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="floating-sparkles" id="floatingSparkles"></div>
+    <img src="dinosaur.png" alt="Flying dinosaur" class="flying-dinosaur loaded" id="flyingDinosaur" onerror="this.style.display='none'; this.classList.remove('loaded');">
+    
+    <header>
+        <h1>✨ Olivia's Fairy House ✨</h1>
+        <p class="subtitle">Enchanted Dresses for Little Fairies</p>
+    </header>
+
+    <main>
+        <section class="fairy-house-section">
+            <div class="house-decoration left-mushroom"></div>
+            <div class="house-decoration right-mushroom"></div>
+            <div class="house-decoration left-flower"></div>
+            <div class="house-decoration right-flower"></div>
+            <div class="fairy-house">
+                <div class="house-roof">
+                    <div class="roof-decoration"></div>
+                    <div class="house-flower roof-flower-1">🌺</div>
+                    <div class="house-flower roof-flower-2">🌼</div>
+                    <div class="house-flower roof-flower-3">🌸</div>
+                </div>
+                <div class="house-body">
+                    <div class="door"></div>
+                    <div class="window left-window">
+                        <div class="window-pane"></div>
+                        <div class="window-glow"></div>
+                        <div class="house-flower window-flower-left-1">🌷</div>
+                        <div class="house-flower window-flower-left-2">🌹</div>
+                    </div>
+                    <div class="window right-window">
+                        <div class="window-pane"></div>
+                        <div class="window-glow"></div>
+                        <div class="house-flower window-flower-right-1">🌷</div>
+                        <div class="house-flower window-flower-right-2">🌹</div>
+                    </div>
+                    <div class="house-flower body-flower-1">🌻</div>
+                    <div class="house-flower body-flower-2">🌺</div>
+                </div>
+                <div class="house-base">
+                    <div class="house-flower base-flower-1">🌼</div>
+                    <div class="house-flower base-flower-2">🌸</div>
+                    <div class="house-flower base-flower-3">🌻</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fairy-section">
+            <div class="fairy" id="fairy">
+                <div class="fairy-head">
+                    <div class="fairy-face">
+                        <img src="fairy-face.jpg" alt="Fairy face" class="fairy-face-image" id="fairyFaceImage" onerror="this.style.display='none'; document.querySelectorAll('.eye, .fairy-mouth').forEach(el => {el.style.opacity='1'; el.style.display='block';}); document.querySelector('.fairy-head').style.background='#FFDBAC';">
+                        <div class="eye left-eye"></div>
+                        <div class="eye right-eye"></div>
+                        <div class="fairy-mouth"></div>
+                    </div>
+                    <div class="fairy-hair"></div>
+                </div>
+                <div class="fairy-body">
+                    <div class="fairy-wings">
+                        <div class="wing left-wing"></div>
+                        <div class="wing right-wing"></div>
+                    </div>
+                    <div class="fairy-dress"></div>
+                </div>
+                <div class="fairy-wand">
+                    <div class="wand-star">✨</div>
+                </div>
+            </div>
+            <p class="fairy-text">Meet our magical fairy!</p>
+        </section>
+
+        <section class="dresses-section">
+            <h2>Enchanted Dresses Collection</h2>
+            <div class="dresses-grid">
+                <div class="dress-card" data-dress="1">
+                    <div class="card-glow"></div>
+                    <div class="dress-display dress-1">
+                        <div class="dress-top">
+                            <div class="dress-decoration">🌹</div>
+                        </div>
+                        <div class="dress-skirt"></div>
+                        <div class="dress-sparkle">✨</div>
+                    </div>
+                    <h3>Pink Rose Fairy</h3>
+                    <p>Soft pink with rose petals</p>
+                </div>
+                
+                <div class="dress-card" data-dress="2">
+                    <div class="card-glow"></div>
+                    <div class="dress-display dress-2">
+                        <div class="dress-top">
+                            <div class="dress-decoration">⭐</div>
+                        </div>
+                        <div class="dress-skirt"></div>
+                        <div class="dress-sparkle">✨</div>
+                    </div>
+                    <h3>Lavender Dream</h3>
+                    <p>Dreamy purple with stars</p>
+                </div>
+                
+                <div class="dress-card" data-dress="3">
+                    <div class="card-glow"></div>
+                    <div class="dress-display dress-3">
+                        <div class="dress-top">
+                            <div class="dress-decoration">🌻</div>
+                        </div>
+                        <div class="dress-skirt"></div>
+                        <div class="dress-sparkle">✨</div>
+                    </div>
+                    <h3>Sunshine Yellow</h3>
+                    <p>Bright yellow with flowers</p>
+                </div>
+                
+                <div class="dress-card" data-dress="4">
+                    <div class="card-glow"></div>
+                    <div class="dress-display dress-4">
+                        <div class="dress-top">
+                            <div class="dress-decoration">🌊</div>
+                        </div>
+                        <div class="dress-skirt"></div>
+                        <div class="dress-sparkle">✨</div>
+                    </div>
+                    <h3>Ocean Blue</h3>
+                    <p>Calming blue with waves</p>
+                </div>
+                
+                <div class="dress-card" data-dress="5">
+                    <div class="card-glow"></div>
+                    <div class="dress-display dress-5">
+                        <div class="dress-top">
+                            <div class="dress-decoration">🍃</div>
+                        </div>
+                        <div class="dress-skirt"></div>
+                        <div class="dress-sparkle">✨</div>
+                    </div>
+                    <h3>Forest Green</h3>
+                    <p>Nature green with leaves</p>
+                </div>
+                
+                <div class="dress-card" data-dress="6">
+                    <div class="card-glow"></div>
+                    <div class="dress-display dress-6">
+                        <div class="dress-top">
+                            <div class="dress-decoration">🌈</div>
+                        </div>
+                        <div class="dress-skirt"></div>
+                        <div class="dress-sparkle">✨</div>
+                    </div>
+                    <h3>Rainbow Sparkle</h3>
+                    <p>Colorful rainbow magic</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ✨ magic ✨ for little fairies everywhere</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
