@@ -1,0 +1,17 @@
+{
+  "build": {
+    "command": "",
+    "cwd": ".",
+    "watch": []
+  },
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
+
