@@ -6,14 +6,21 @@ This project is fully configured and ready to deploy to Cloudflare Pages.
 
 ### 1. Via Cloudflare Dashboard (Recommended)
 
+**IMPORTANT: Make sure you're in the PAGES section, NOT Workers!**
+
 1. **Access Cloudflare Dashboard**
    - Go to https://dash.cloudflare.com/
    - Sign in to your account
 
-2. **Create New Pages Project**
-   - Click on **Pages** in the sidebar
-   - Click **Create a project**
-   - Select **Connect to Git**
+2. **Navigate to Pages (NOT Workers)**
+   - Look in the **left sidebar** for **"Pages"** (it has a document/page icon)
+   - **DO NOT** click on "Workers & Pages" - that's different
+   - Click directly on **"Pages"** in the sidebar
+   - You should see a page titled "Pages" with options to create projects
+
+3. **Create New Pages Project**
+   - Click the **"Create a project"** button (usually blue, top right)
+   - Select **"Connect to Git"** option
 
 3. **Connect GitHub Repository**
    - Choose **GitHub** as your Git provider
